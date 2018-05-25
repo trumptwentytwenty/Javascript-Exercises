@@ -1,0 +1,22 @@
+///////////////////////////////////////////////////
+
+function getLongestWordOfMixedElements(arr)  {
+ var longestWord = '';
+ 
+ for( x=0; x < arr.length; x++){
+  // typeof returns the information as a string
+  if(typeof arr[x] === 'string' && longestWord.length === 0 || arr[x].length > longestWord.length){
+    longestWord = arr[x];
+    }
+  } 
+  return longestWord;
+}
+
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+
+var output = getLongestWordOfMixedElements([3, 'word', 5, 'up', 3, 1]);
+console.log(output); // --> 'word'
+
+///////////////////////////////////////////////////
