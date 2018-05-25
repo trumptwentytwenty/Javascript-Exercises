@@ -1,0 +1,20 @@
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  // your code here
+  var a = word1.length;
+  var b = word2.length;
+  var c = word3.length;
+  if (a <= b && a <= c){
+    return(a)
+  }
+    
+  if (b <= a && b <= c){
+    return(b)
+  }
+    
+  if (c <= a && c <= b){
+    return(c)
+  }
+}
+
+var output = findMinLengthOfThreeWords('be', 'a', 'a');
+console.log(output);
