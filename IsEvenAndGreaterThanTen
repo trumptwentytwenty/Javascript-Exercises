@@ -1,0 +1,13 @@
+function isEvenAndGreaterThanTen(num) {
+  var check = num % 2;
+    if (check == 0 && num > 10)
+      return true;
+    else
+      return false;
+  
+  
+    
+  // your code here
+}
+
+isEvenAndGreaterThanTen(10)
