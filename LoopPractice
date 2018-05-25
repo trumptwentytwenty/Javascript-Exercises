@@ -1,0 +1,22 @@
+function owassoRams(n){
+  count = 1;
+  array = [];
+  while(count < n+1)
+    if(count % 3 === 0 && count % 5 === 0){
+      array.push("OwassoRams");
+      count++;
+    }else if(count % 3 === 0){
+      array.push("Owasso");
+      count++;
+    }else if(count % 5 === 0){
+      array.push("Rams");
+      count++;
+    }else{
+      array.push(count);
+      count++;
+    }
+    return(array);
+    }
+
+var output = owassoRams(15);
+console.log(output);
